@@ -1,16 +1,14 @@
-
 import './App.css';
+import WeatherSearch from './WeatherSearch';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <WeatherSearch/>
        
        <footer>
-
-        
-       </footer>
-        <p>
+ <p>
           <a
           className="App-link"
           href="https://github.com/mirielimacedo/my-app-weather"
@@ -28,6 +26,9 @@ function App() {
          target="_blank"
           rel="noopener noreferrer">   SheCodes</a>
         </p>
+        
+       </footer>
+       
 
       
        
