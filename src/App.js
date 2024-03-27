@@ -1,22 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       
+       <footer>
+
+        
+       </footer>
         <p>
-          Mirieli <code>Hello</code> React.
-        </p>
-        <a
+          <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/mirielimacedo/my-app-weather"
           target="_blank"
           rel="noopener noreferrer"
         >
-         React
+         Open-source code
         </a>
+       <small className="App-small">, by </small> 
+         <a className="App-link" href=" https://www.linkedin.com/feed/"
+        target="_blank"
+          rel="noopener noreferrer">  Mirieli Maria </a>
+        <small className="App-small"> from </small>
+         <a className="App-link" href="https://www.shecodes.io/"
+         target="_blank"
+          rel="noopener noreferrer">   SheCodes</a>
+        </p>
+
+      
+       
       </header>
     </div>
   );
