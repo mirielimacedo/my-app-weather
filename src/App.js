@@ -1,7 +1,7 @@
 import React, {component, useState} from "react";
 
-import WeatherSearch from "./WeatherSearch";
-import WeatherTemperature from "./WeatherTemperature";
+// import WeatherSearch from "./WeatherSearch";
+// import WeatherTemperature from "./WeatherTemperature";
 
 import './App.css';
 
@@ -19,8 +19,8 @@ function App() {
   <h1>Weather Application</h1>
   <main>
   
-    <WeatherSearch onCityChange={handleCityChange}/>
-     {city && <WeatherTemperature city={city} />}
+    {/* <WeatherSearch onCityChange={handleCityChange}/>
+     {city && <WeatherTemperature city={city} />} */}
   </main>
    <footer>
     <p>
