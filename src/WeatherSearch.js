@@ -20,13 +20,7 @@ export default function WeatherSearch({ onCityChange }) {
         value={inputCity}
         placeholder="Type a city"
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" className="button" />
     </form>
   );
 }
-
-
-    
-               
-    
-
