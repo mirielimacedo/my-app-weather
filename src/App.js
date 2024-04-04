@@ -15,12 +15,34 @@ function App() {
     <div className="App">
       <div className="App">
         <header className="App-header">
+<<<<<<< Updated upstream
           <h1>Weather Application</h1>
+=======
+          <ul className="App-navigation-items">
+            <li className="App-navigation-items">
+              <a href="/">Lisbon</a>
+            </li>
+            <li className="App-navigation-items">
+              <a href="/">Paris</a>
+            </li>
+            <li className="App-navigation-items">
+              <a href="/">Sydney</a>
+            </li>
+            <li className="App-navigation-items">
+              <a href="/">San Francisco</a>
+            </li>
+          </ul>
+
+>>>>>>> Stashed changes
           <main>
             <WeatherSearch onCityChange={handleCityChange} />
             {city && <WeatherTemperature city={city} />}
           </main>
+<<<<<<< Updated upstream
           <footer>
+=======
+          <footer className="App-footer">
+>>>>>>> Stashed changes
             <p>
               <a
                 className="App-link"

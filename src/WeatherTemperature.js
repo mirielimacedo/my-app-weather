@@ -59,6 +59,7 @@ export default function WeatherTemperature(props) {
   // A lógica de renderização permanece a mesma
   if (temperature !== null) {
     return (
+<<<<<<< Updated upstream
       <div className="ContainerTemperature">
         <ul>
           <li>Temperature: {temperature}°C</li>
@@ -74,6 +75,36 @@ export default function WeatherTemperature(props) {
             />
           </li>
         </ul>
+=======
+      <div className="Container-temperature">
+        <div>
+          <span>
+            <h1 className="Weather-app-city">
+              {props.city}, {temperature}°C
+            </h1>
+          </span>
+          <p className="Weather-app-details">
+            {" "}
+            {description} today,
+            <br />
+            <span>humidity: {humidity}%</span>
+            <br />
+            <span>and wind: {wind} km/h</span>
+          </p>
+        </div>
+
+        <p>
+          <a href="https://www.npmjs.com/package/react-animated-weather"></a>
+        </p>
+        <div>
+          <ReactAnimatedWeather
+            icon={weatherIcon}
+            color="#385170"
+            size={90}
+            animate={true}
+          />
+        </div>
+>>>>>>> Stashed changes
       </div>
     );
   } else {
