@@ -19,8 +19,12 @@ export default function WeatherSearch({ onCityChange }) {
         onChange={handleChange}
         value={inputCity}
         placeholder="Type a city"
+        className="App-input"
       />
-      <input type="submit" value="Search" className="button" />
+      <button type="submit" value="text" className="button">
+        {" "}
+        Search
+      </button>
     </form>
   );
 }

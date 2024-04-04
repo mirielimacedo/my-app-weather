@@ -9,12 +9,21 @@
   display: inline;
   margin: 0 20px 0 0 ;
 }
+.App-input{
+  width: 60%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 
 
 
 .App-header {
-  border: 400px solid;
+  border: 250px solid;
   background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   min-height: 55vh;
   display: flex;
@@ -39,8 +48,14 @@
 }
 
 .button {
-  background-color: #09356b;
-  font-weight: bold;
-  color:white;
+background-color: #142d4c;
+   border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
 }
 

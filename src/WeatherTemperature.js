@@ -30,7 +30,7 @@ export default function WeatherTemperature(props) {
   const [wind, setWind] = useState(null);
   const [weatherIcon, setWeatherIcon] = useState("");
 
- // Substitua seu useEffect existente por este
+  // Substitua seu useEffect existente por este
   useEffect(() => {
     const fetchTemperature = async () => {
       const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c"; // Substitua pela sua chave da API real
@@ -60,25 +60,27 @@ export default function WeatherTemperature(props) {
   if (temperature !== null) {
     return (
       <div className="ContainerTemperature">
-        <ul>
-         
-          <li>Temperature: {temperature}°C</li>
-          <li>Description: {description}</li>
-          <li>Humidity: {humidity}%</li>
-          <li>Wind: {wind} km/h</li>
-          <li>
-            <ReactAnimatedWeather
-              icon={iconMap[weatherIcon] || "CLEAR_DAY"}
-              color="goldenrod"
-              size={64}
-              animate={true}
-            />
-          </li>
-        </ul>
+        <span>
+          <h1>
+            {props.city}, {temperature}°C
+          </h1>
+        </span>
+        <p>
+          {" "}
+          {description} today, humidity:{humidity}% and wind: {wind} km/h
+        </p>
+        <div>
+          {" "}
+          <ReactAnimatedWeather
+            icon={iconMap[weatherIcon] || "CLEAR_DAY"}
+            color="goldenrod"
+            size={64}
+            animate={true}
+          />
+        </div>
       </div>
     );
-} else {
+  } else {
     return <h4>Loading temperature for {props.city}...</h4>;
-}
-
+  }
 }

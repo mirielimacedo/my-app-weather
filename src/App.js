@@ -6,7 +6,7 @@ import WeatherTemperature from "./WeatherTemperature";
 import "./App.css";
 
 function App() {
-  let [city, setCity] = useState(""); // Estado para guardar a cidade
+  const [city, setCity] = useState(""); // Estado para guardar a cidade
   function handleCityChange(newCity) {
     setCity(newCity); // Atualiza o estado com a nova cidade
   }
@@ -31,7 +31,7 @@ function App() {
                   <a href="/">San Francisco</a>
                 </li>
               </ul>
-              <h1>Weather Application</h1>
+
               <main>
                 <WeatherSearch onCityChange={handleCityChange} />
                 {city && <WeatherTemperature city={city} />}
