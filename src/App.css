@@ -2,7 +2,9 @@
   text-align: center;
 
 }
-
+h1{
+  color:black;
+}
 
 .App-header {
  background: linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%);

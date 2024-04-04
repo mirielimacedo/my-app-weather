@@ -30,7 +30,7 @@ export default function WeatherTemperature(props) {
   const [wind, setWind] = useState(null);
   const [weatherIcon, setWeatherIcon] = useState("");
 
- // Substitua seu useEffect existente por este
+  // Substitua seu useEffect existente por este
   useEffect(() => {
     const fetchTemperature = async () => {
       const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c"; // Substitua pela sua chave da API real
@@ -61,7 +61,6 @@ export default function WeatherTemperature(props) {
     return (
       <div className="ContainerTemperature">
         <ul>
-         
           <li>Temperature: {temperature}°C</li>
           <li>Description: {description}</li>
           <li>Humidity: {humidity}%</li>
@@ -77,8 +76,7 @@ export default function WeatherTemperature(props) {
         </ul>
       </div>
     );
-} else {
+  } else {
     return <h4>Loading temperature for {props.city}...</h4>;
-}
-
+  }
 }
