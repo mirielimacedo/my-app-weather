@@ -76,9 +76,6 @@ export default function WeatherTemperature(props) {
           </p>
         </div>
 
-        <p>
-          <a href="https://www.npmjs.com/package/react-animated-weather"></a>
-        </p>
         <div>
           <ReactAnimatedWeather
             icon={weatherIcon}
