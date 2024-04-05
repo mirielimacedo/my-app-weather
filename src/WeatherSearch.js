@@ -11,16 +11,20 @@ export default function WeatherSearch({ onCityChange }) {
   function handleChange(event) {
     setInputCity(event.target.value);
   }
-
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        onChange={handleChange}
-        value={inputCity}
-        placeholder="Type a city"
-      />
-      <input type="submit" value="Search" className="button" />
-    </form>
+    <div className="search-container">
+      {" "}
+      {/* Contêiner adicionado */}
+      <form onSubmit={handleSubmit}>
+        <input
+          type="search"
+          onChange={handleChange}
+          value={inputCity}
+          placeholder="Type a city"
+          className="App-input"
+        />
+        <input type="submit" value="Search" className="button" />
+      </form>
+    </div>
   );
 }

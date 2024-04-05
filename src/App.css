@@ -5,11 +5,24 @@
 
 .App-navigation-items {
   list-style: none;
-  margin: 0;
-  padding: 0 0 20px;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  
+}
+.App-navigation-items li {
   display: inline;
-  margin: 0 20px 0 0;
-  text-align: center;
+  margin-left: 20px;
+}
+.App-navigation-items a {
+  color: #142d4c;
+  text-decoration: none;
+   transition: color 0.3s ease, text-decoration 0.3s ease;
+  
+}
+.App-navigation-items a:hover {
+  color: #385170;
+   text-decoration: underline;
   
 }
 .Container-temperature{
@@ -29,14 +42,55 @@ line-height: 48px;
   line-height: 24px;
 }
 
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+   margin: 20px 15px;
+}
 .App-input {
-  width: 60%;
-  padding: 12px 20px;
-  margin: 8px 8px;
-  display: inline-block;
-  border: 1px solid #ccc;
+  flex-grow: 1;
+  padding: 15px 40px;
+   margin: 0;
+   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  outline: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ margin-right: 10px;
+  
+}
+
+.App-input:focus {
+  border-color: #142d4c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+
+.button {
+  padding: 15px 20px;
+   background-color: #142d4c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+ 
+}
+
+.button:hover,
+.button:focus {
+  background-color: #385170;
+  /* Cor de fundo ao passar o mouse ou focar */
+  transform: translateY(-2px);
+  /* Efeito de "levantar" ao passar o mouse ou focar */
+}
+
+.button:active {
+  transform: translateY(1px);
+  /* Efeito de "pressionar" ao clicar */
 }
 
 
@@ -66,17 +120,6 @@ line-height: 48px;
 
 }
 
-.button {
-  background-color: #142d4c;
-  border: none;
-  color: white;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-}
 .App-footer{
   color: #142d4c;
 
