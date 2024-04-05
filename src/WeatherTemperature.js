@@ -30,10 +30,9 @@ export default function WeatherTemperature(props) {
   const [wind, setWind] = useState(null);
   const [weatherIcon, setWeatherIcon] = useState("");
 
-  // Substitua seu useEffect existente por este
   useEffect(() => {
     const fetchTemperature = async () => {
-      const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c"; // Substitua pela sua chave da API real
+      const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
       const units = "metric";
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=${units}`;
 
@@ -54,35 +53,27 @@ export default function WeatherTemperature(props) {
     if (props.city) {
       fetchTemperature();
     }
-  }, [props.city]); // A dependência [props.city] indica que o useEffect é re-executado quando props.city muda
+  }, [props.city]);
 
-  // A lógica de renderização permanece a mesma
   if (temperature !== null) {
     return (
       <div className="Container-temperature">
-        <div>
-          <span>
-            <h1 className="Weather-app-city">
-              {props.city}, {temperature}°C
-            </h1>
-          </span>
-          <p className="Weather-app-details">
-            {" "}
-            {description} today,
-            <br />
-            <span>humidity: {humidity}%</span>
-            <br />
-            <span>and wind: {wind} km/h</span>
-          </p>
+        <div className="City-container">
+          <h1 className="Weather-app-city">{props.city}</h1>
         </div>
 
-        <div>
+        <div className="Temperature-and-icon">
+          <span className="Temperature">{temperature}°C</span>
           <ReactAnimatedWeather
             icon={weatherIcon}
             color="#385170"
             size={90}
             animate={true}
           />
+        </div>
+
+        <div className="Weather-app-details">
+          {description} today, humidity: {humidity}% and wind: {wind} km/h
         </div>
       </div>
     );

@@ -25,23 +25,6 @@
    text-decoration: underline;
   
 }
-.Container-temperature{
-  display: flex;
-  justify-content: space-around;
-}
-.Weather-app-city{
-font-size: 38px;
-font-weight: 900;
-margin:0;
-line-height: 48px;
-}
-.Weather-app-details{
-  color:#142d4c;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-}
-
 
 .search-container {
   display: flex;
@@ -108,7 +91,57 @@ line-height: 48px;
 
 
 }
+.Container-temperature {
+  display: flex;
+  flex-direction: column;
+  /* Organiza os itens em coluna */
+  align-items: flex-start;
+  /* Alinha itens à esquerda */
+  padding: 20px;
+  /* Adiciona um pouco de espaço interno */
+  color: #142d4c;
+  /* Cor padrão para o texto */
+}
 
+.Weather-app-city {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  /* Espaço abaixo do nome da cidade */
+  color: #142d4c;
+  /* Cor do texto */
+}
+
+.Weather-app-details {
+  font-size: 14px;
+  /* Tamanho de fonte menor para detalhes */
+  font-weight: 400;
+  /* Peso da fonte normal */
+  opacity: 0.7;
+  /* Torna o texto mais opaco */
+  margin: 5px 0;
+  /* Espaço entre detalhes */
+}
+
+.Temperature-and-icon {
+  display: flex;
+  /* Garante que os itens sejam dispostos lado a lado */
+  align-items: center;
+  /* Alinha verticalmente a temperatura e o ícone */
+  margin: 10px 0;
+  /* Adiciona um espaço acima e abaixo do agrupamento */
+}
+
+.Temperature {
+  font-size: 48px;
+  /* Tamanho da fonte para a temperatura */
+  font-weight: bold;
+  /* Peso da fonte para a temperatura */
+  margin-right: 20px;
+  /* Espaço entre a temperatura e o ícone */
+}
+
+/* Se o ícone ainda estiver aparecendo abaixo, verifique se não há estilos conflitantes aplicando 'flex-direction: column;' ao '.Temperature-and-icon' ou limitações no tamanho do contêiner que possam estar forçando o ícone a mover-se para baixo. */
 .App-link {
   color: #142d4c;
   font-size: 15px;

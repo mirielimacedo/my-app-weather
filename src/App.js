@@ -6,7 +6,7 @@ import WeatherTemperature from "./WeatherTemperature";
 import "./App.css";
 
 function App() {
-  const [city, setCity] = useState(""); // Estado para guardar a cidade
+  const [city, setCity] = useState("Perth"); // Estado para guardar a cidade
   function handleCityChange(newCity) {
     setCity(newCity); // Atualiza o estado com a nova cidade
   }
