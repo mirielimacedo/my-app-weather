@@ -66,14 +66,13 @@
 .button:hover,
 .button:focus {
   background-color: #385170;
-  /* Cor de fundo ao passar o mouse ou focar */
-  transform: translateY(-2px);
-  /* Efeito de "levantar" ao passar o mouse ou focar */
+    transform: translateY(-2px);
+  
 }
 
 .button:active {
   transform: translateY(1px);
-  /* Efeito de "pressionar" ao clicar */
+  
 }
 
 
@@ -94,54 +93,42 @@
 .Container-temperature {
   display: flex;
   flex-direction: column;
-  /* Organiza os itens em coluna */
-  align-items: flex-start;
-  /* Alinha itens à esquerda */
-  padding: 20px;
-  /* Adiciona um pouco de espaço interno */
-  color: #142d4c;
-  /* Cor padrão para o texto */
+    align-items: flex-start;
+    padding: 20px;
+    color: #142d4c;
+  
 }
 
 .Weather-app-city {
   font-size: 38px;
   font-weight: bold;
   margin: 0 0 10px 0;
-  /* Espaço abaixo do nome da cidade */
-  color: #142d4c;
-  /* Cor do texto */
+    color: #142d4c;
+  
 }
 
 .Weather-app-details {
   font-size: 14px;
-  /* Tamanho de fonte menor para detalhes */
   font-weight: 400;
-  /* Peso da fonte normal */
-  opacity: 0.7;
-  /* Torna o texto mais opaco */
-  margin: 5px 0;
-  /* Espaço entre detalhes */
+    opacity: 0.7;
+    margin: 5px 0;
+  
 }
 
 .Temperature-and-icon {
   display: flex;
-  /* Garante que os itens sejam dispostos lado a lado */
-  align-items: center;
-  /* Alinha verticalmente a temperatura e o ícone */
-  margin: 10px 0;
-  /* Adiciona um espaço acima e abaixo do agrupamento */
-}
+   align-items: center;
+    margin: 10px 0;
+  }
 
 .Temperature {
   font-size: 48px;
-  /* Tamanho da fonte para a temperatura */
-  font-weight: bold;
-  /* Peso da fonte para a temperatura */
-  margin-right: 20px;
-  /* Espaço entre a temperatura e o ícone */
+   font-weight: bold;
+   margin-right: 20px;
+ 
 }
 
-/* Se o ícone ainda estiver aparecendo abaixo, verifique se não há estilos conflitantes aplicando 'flex-direction: column;' ao '.Temperature-and-icon' ou limitações no tamanho do contêiner que possam estar forçando o ícone a mover-se para baixo. */
+
 .App-link {
   color: #142d4c;
   font-size: 15px;
