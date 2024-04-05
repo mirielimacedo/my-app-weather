@@ -59,23 +59,6 @@ export default function WeatherTemperature(props) {
   // A lógica de renderização permanece a mesma
   if (temperature !== null) {
     return (
-<<<<<<< Updated upstream
-      <div className="ContainerTemperature">
-        <ul>
-          <li>Temperature: {temperature}°C</li>
-          <li>Description: {description}</li>
-          <li>Humidity: {humidity}%</li>
-          <li>Wind: {wind} km/h</li>
-          <li>
-            <ReactAnimatedWeather
-              icon={iconMap[weatherIcon] || "CLEAR_DAY"}
-              color="goldenrod"
-              size={64}
-              animate={true}
-            />
-          </li>
-        </ul>
-=======
       <div className="Container-temperature">
         <div>
           <span>
@@ -104,7 +87,6 @@ export default function WeatherTemperature(props) {
             animate={true}
           />
         </div>
->>>>>>> Stashed changes
       </div>
     );
   } else {

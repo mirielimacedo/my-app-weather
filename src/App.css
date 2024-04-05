@@ -2,11 +2,6 @@
   text-align: center;
 
 }
-<<<<<<< Updated upstream
-h1{
-  color:black;
-}
-=======
 
 .App-navigation-items {
   list-style: none;
@@ -44,19 +39,13 @@ line-height: 48px;
   box-sizing: border-box;
 }
 
->>>>>>> Stashed changes
 
 .App-header {
- background: linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%);
-  min-height: 100vh;
+  border: 250px solid;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
-<<<<<<< Updated upstream
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #385170; 
-=======
   align-items: left;
   justify-content: left;
   color: #385170;
@@ -64,25 +53,10 @@ line-height: 48px;
   padding:0 0 30px 0;
 
 
->>>>>>> Stashed changes
 }
 
 .App-link {
   color: #142d4c;
-<<<<<<< Updated upstream
-  font-size: 20px;
-  
-}
-.App-small{
-  font-size: 20px;
-  
-}
-
-.button {
-  background-color: #09356b;
-  font-weight: bold;
-  color:white;
-=======
   font-size: 15px;
 
 }
@@ -102,7 +76,6 @@ line-height: 48px;
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
->>>>>>> Stashed changes
 }
 .App-footer{
   color: #142d4c;
